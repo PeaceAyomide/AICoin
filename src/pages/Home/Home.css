@@ -1,0 +1,8 @@
+.home{
+    background: linear-gradient(to bottom, #283048, #859398);  
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}

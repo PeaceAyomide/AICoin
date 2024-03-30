@@ -1,0 +1,122 @@
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #283048, #859398);  
+ 
+  }
+
+.signContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4rem;
+    height: 70vh;
+    width: 60vh;
+   gap: 1rem;
+   overflow: hidden;
+   min-width: 340px;
+   min-height: 370px;
+
+}
+
+.signContent button{
+    height: 2rem;
+    overflow: hidden;
+    width: 6rem;
+    background-color:#283048 ;
+    border: 0px ;
+    border-radius: 3rem;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.signContent button:hover{
+    transform: scale(1.1);
+}
+
+.signup h2{
+    color: #283048;
+margin-bottom: -1rem;
+}
+
+.email input{
+padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 1rem;
+border-radius: 1rem;
+border: 1px solid #283048;
+width: 14rem;
+}
+
+.email h5{
+    color: #283048;
+}
+.password h5{
+    color: #283048;
+
+}
+
+.password input{
+    padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 1rem;
+border-radius: 1rem;
+border: 1px solid #283048;
+width: 14rem;
+}
+
+.password p{
+    color: red;
+    font-size: 0.6rem;
+}
+
+.switchlogin{
+    font-size: 0.7rem;
+    display: flex;
+    gap: 0.3rem;
+    cursor: pointer;
+    color: #283048;
+
+}
+
+.switchlogin .Link{
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: #283048;
+
+}
+
+.switchlogin .Link:hover{
+    transform: scale(1.1);
+ color: brown;
+}
+.signContent p{
+    color: red;
+    font-size: 0.6rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+.signup h2{
+    color: #283048;
+margin-bottom: -2rem;
+}
+
+.signContent{
+    height: 50vh;
+    width: 50vh;
+}
+
+.email h5{
+    margin-bottom:0.6rem;
+    
+}
+.password h5{
+    margin-bottom:0.6rem;
+    
+}
+}

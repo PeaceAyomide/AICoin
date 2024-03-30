@@ -1,0 +1,71 @@
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #283048, #859398);  
+ 
+   }
+
+.signContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4rem;
+    height: 70vh;
+    width: 60vh;
+   gap: 1rem;
+
+}
+
+.signContent button{
+    height: 2rem;
+    overflow: hidden;
+    width: 6rem;
+    background-color:#0077b6 ;
+    border: 0px ;
+    border-radius: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.signup h2{
+    color: #0077b6;
+margin-bottom: -1rem;
+}
+
+.email input{
+padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 1rem;
+border-radius: 1rem;
+border: 1px solid aqua;
+width: 14rem;
+}
+
+.password input{
+    padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 1rem;
+border-radius: 1rem;
+border: 1px solid aqua;
+width: 14rem;
+}
+
+.switchlogin{
+    font-size: 0.7rem;
+    display: flex;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.switchlogin span{
+    transition: 0.3s ease-in-out;
+}
+
+.switchlogin span:hover{
+    transform: scale(1.1);
+color: brown;
+}

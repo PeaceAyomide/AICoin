@@ -1,0 +1,46 @@
+import React, { useEffect, useState } from 'react';
+import Home from './pages/Home/Home';
+import LoginSign from './components/LoginandRegistration/LoginSign'
+import Register from './components/Register/Register'
+import Navbar from './Navbar/Navbar';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { onAuthStateChanged } from 'firebase/auth';
+import { ProtectedRoute } from './protectedroute';
+import { auth } from './firebase'
+
+const App = () => {
+  const [user, setUser] = useState(null);
+const [isFetching, setIsFetching] = useState(true)
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+        setIsFetching(false);
+        return;
+      }
+
+      setUser(null)
+      setIsFetching(false)
+
+    });
+    return () => unsubscribe();
+  }, []);
+
+ 
+  
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <Register user={user}></Register>} />
+        <Route path='/login' element={ <LoginSign user={user}></LoginSign>} />
+        <Route path='/private' element={ <ProtectedRoute user={user}><Navbar /><Home/></ProtectedRoute>} />
+    
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+
+
+export default App;
