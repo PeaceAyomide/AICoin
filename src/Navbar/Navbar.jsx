@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="Navbar">
-    <span className="nav-logo">LOGO</span>
+    <span className="nav-logo">AI-mine</span>
     <div className={`nav-items ${isOpen && "open"}`}>
       <a href="#home" onClick={closeNavbar}>DashBoard</a>
       <a href="#about" onClick={closeNavbar}>UpGrade</a>
