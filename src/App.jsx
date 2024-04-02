@@ -3,10 +3,12 @@ import Home from './pages/Home/Home';
 import LoginSign from './components/LoginandRegistration/LoginSign'
 import Register from './components/Register/Register'
 import Navbar from './Navbar/Navbar';
+
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
 import { ProtectedRoute } from './protectedroute';
 import { auth } from './firebase'
+import Home2 from './pages/Home/Home2/Home2';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -34,7 +36,7 @@ const [isFetching, setIsFetching] = useState(true)
       <Routes>
         <Route path='/' element={ <Register user={user}></Register>} />
         <Route path='/login' element={ <LoginSign user={user}></LoginSign>} />
-        <Route path='/private' element={ <ProtectedRoute user={user}><Navbar /><Home/></ProtectedRoute>} />
+        <Route path='/private' element={ <ProtectedRoute user={user}><Navbar /><Home/><Home2/></ProtectedRoute>} />
     
       </Routes>
     </BrowserRouter>

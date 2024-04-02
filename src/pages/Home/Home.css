@@ -1,12 +1,10 @@
 .home{
-    background: linear-gradient(to bottom, #283048, #859398);  
- height: 100vh;
+  height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: row-reverse;
 gap: 5rem;
-
 }
 
 .home img{
@@ -94,4 +92,72 @@ color: #283048;
 color: white;
 border-radius: 3rem;
 width: 12rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 6rem;
+    }
+
+    .home img{
+        height: 15rem;
+        margin-top: 4rem;
+       }
+
+       .btcbalance{
+        min-height: 300px;
+        min-width: 350px;
+     }
+     .btcbalance h2{
+        font-size: 1.5rem;
+     }
+
+     
+.btcbalance p{
+    color:#283048 ;
+}
+.live p{
+    color: white;
+font-size: 0.9rem;
+}
+
+}
+
+@media only screen and (max-width: 850px) {
+    .home img{
+        height: 11rem;
+        margin-top: 25rem;
+      
+    }
+
+    .home{ 
+         padding-bottom: 30rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 22rem;
+    }
+   
+    .home img{
+        height: 11rem;
+        margin-top: 15rem;
+       }
+
+       .btcbalance{
+        min-height: 300px;
+        min-width: 270px;
+     }
 }
