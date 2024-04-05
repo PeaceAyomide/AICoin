@@ -1,0 +1,85 @@
+.newsection{
+    display: flex;
+    justify-content: center;
+ padding-top: 6rem;
+    height: 100vh;
+}
+.newsall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #283048;
+    height: 7rem;
+    width: 70rem;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+}
+
+.newswall{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newswall button{
+    background-color: blue;
+    color: white;
+    height: 2rem;
+    width: 7rem;
+    border: 0px;
+    border-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.newsall button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid blue;
+}
+
+@media only screen and (max-width: 1000px) {
+    .newsall{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #283048;
+        height: 7rem;
+        width: 40rem;
+        color: white;
+        font-size: 0.8rem;
+        
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+.newsection{
+    height: 190vh;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .newsall{
+        width: 25rem;
+        font-size: 0.7rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .newsall{
+      
+        width: 21rem;
+        font-size: 0.7rem;
+       
+        text-align: center;
+    }
+    .newsall h3{
+        font-weight: 100;
+    }
+    .newsection{
+        height: 100vh;
+    }
+}

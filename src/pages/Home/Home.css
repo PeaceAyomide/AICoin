@@ -3,8 +3,14 @@
 display: flex;
 justify-content: center;
 align-items: center;
-flex-direction: row-reverse;
-gap: 5rem;
+}
+
+.homewall{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 5rem;
 }
 
 .home img{
@@ -97,16 +103,18 @@ width: 12rem;
 
 
 @media only screen and (max-width: 1010px) {
-    .home{
+    .homewall{
         display: flex;
         flex-direction: column;
         padding-bottom: 6rem;
-        margin-top: 8rem;
+        padding-top: 37rem;
+       
     }
+   
 
     .home img{
         height: 15rem;
-        margin-top: 4rem;
+       
        }
 
        .btcbalance{
@@ -134,13 +142,14 @@ font-size: 0.9rem;
         display: flex;
         flex-direction: column;
         padding-bottom: 6rem;
-        margin-top: -1rem;
-    }
+        }
+.homewall{
+padding-top: 37rem;
+}
 
     .home img{
         height: 15rem;
-        margin-top: 4rem;
-       }
+         }
 
        .btcbalance{
         min-height: 300px;
@@ -164,16 +173,24 @@ font-size: 0.9rem;
 @media only screen and (max-width: 900px) {
     .home img{
         height: 11rem;
-        margin-top: 25rem;
+       
       
     }
-
+    .homewall{
+        padding-top: 1rem;
+        }
     .home{ 
          padding-bottom: 30rem;
     }
 
 }
 
+@media only screen and (max-width: 806px) {
+    .homewall{
+        padding-top: 30rem;
+        }
+   
+}
 
 @media only screen and (max-width: 600px) {
     .home{
@@ -184,7 +201,7 @@ font-size: 0.9rem;
    
     .home img{
         height: 11rem;
-        margin-top: 15rem;
+     
        }
 
        .btcbalance{
@@ -196,14 +213,21 @@ font-size: 0.9rem;
 @media only screen and (max-width: 500px) {
     .home{
       
-        margin-top: -4rem;
+      
     }
+    .homewall{
+        padding-top: 14rem;
+        }
 
 }
 
 @media only screen and (max-width: 330px) {
     .home{
       
-        margin-top: 3rem;
+      
     }
+
+    .homewall{
+        padding-top: 26rem;
+        }
 }

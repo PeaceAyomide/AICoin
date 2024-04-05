@@ -10,6 +10,7 @@ import { auth } from './firebase'
 import Home2 from './pages/Home/Home2/Home2';
 import UpgradePlans from './pages/UpgradePlans/UpgradePlans';
 import Withdraw from './pages/Withdraw/Withdraw';
+import News from './pages/News/News';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -42,7 +43,8 @@ const [isFetching, setIsFetching] = useState(true)
           <><Navbar /><UpgradePlans/></> } />
         <Route path='/withdraw' element={
           <><Navbar /><Withdraw/></> } />
-      
+       <Route path='/news' element={
+          <><Navbar /><News/></> } />
       </Routes>
       
     </BrowserRouter>

@@ -33,12 +33,15 @@ const Home2 = () => {
                   </div>
                   Withdraw
                   </div>
-                  </Link>
+              </Link>
+              <Link to='/news' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
+        
               <div className="news">     <div className="ballicon2">
               <FaRegNewspaper/>
               </div>
              News
-              </div>
+                  </div>
+                  </Link>
               <div className="Coin">     <div className="ballicon3">
                   <FaBitcoin/>
               </div>

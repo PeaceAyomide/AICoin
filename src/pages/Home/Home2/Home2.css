@@ -144,7 +144,7 @@ cursor: pointer;
 
 @media only screen and (max-width: 1010px) {
     .trialcontent{
-        margin-top: 1rem;
+        margin-top: 19rem;
     }
 
     .freeplan{
@@ -212,6 +212,9 @@ cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
+    .trialcontent{
+        margin-top: -3rem;
+    }
     .yourplan{
     
        
@@ -241,7 +244,7 @@ cursor: pointer;
 
 @media only screen and (max-width: 500px) {
     .trialcontent{
-        margin-top: -19rem;
+        margin-top: -26rem;
     }
 }
 

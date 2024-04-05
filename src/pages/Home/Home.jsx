@@ -14,6 +14,7 @@ const Home = () => {
 
   return (
     <div className='home'>
+      <div className="homewall">
       <img src={Robot} alt="" />
         <div className="btcbalance">
           <h2>BTC Balance</h2>
@@ -26,7 +27,9 @@ const Home = () => {
        
         </div>
         </div>
-    </div>
+  
+      </div>
+        </div>
   );
 }
 
