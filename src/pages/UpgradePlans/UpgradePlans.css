@@ -1,0 +1,315 @@
+.upall{
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 1px; /* Gap between grid items */
+  padding-top: 3rem;
+}
+
+.upgradepage{
+  display: flex;
+ justify-content: center;
+align-items: center;
+ height: 100vh;
+ flex-direction: column;
+ 
+}
+
+.holobox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  height: 70px;
+  width: 70px;
+  border-radius: 3rem;
+  position: relative;
+  
+  bottom: 0;
+  top: 0;
+  margin-bottom: -1.5rem;
+  border: 6px solid  white;
+ }
+
+.holobox2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  #FFD580;
+  height: 70px;
+  width: 70px;
+  border-radius: 3rem;
+  position: relative;
+ bottom: 0;
+  top: 0;
+  margin-bottom: -1.5rem;
+  border: 6px solid  white;
+
+}
+
+.holobox3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  height: 70px;
+  width: 70px;
+  border-radius: 3rem;
+  position: relative;
+ 
+  bottom: 0;
+  top: 0;
+  margin-bottom: -1.5rem;
+  border: 6px solid  white;
+
+}
+
+.holobox4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  height: 70px;
+  width: 70px;
+  border-radius: 3rem;
+  position: relative;
+ 
+  bottom: 0;
+  top: 0;
+  margin-bottom: -1.5rem;
+  border: 6px solid  white;
+
+}
+
+
+
+
+
+ .cubes{
+  font-size: 1.9rem;
+}
+
+.box-upgrade{
+  background-color: white;
+  width: 390px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+border-radius: 3rem;
+}
+
+.basicplan{
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+}
+
+.basicplan h4{
+  margin-bottom: 0.2rem;
+}
+
+.basicplan p span{
+  color: gray;
+}
+
+.durationbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.durationbox .box1{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: #283048;
+  height: 60px;
+  width: 130px;
+  padding-bottom: 1rem;
+overflow: hidden;  
+border-radius: 1rem;
+}
+
+.icondura{
+  display: flex;
+  justify-content: center;
+align-items: center;
+  height: 40px;
+  background-color: gray;
+  width: 40px;
+  border-radius:3rem ;
+  margin-right: 10px;
+}
+
+.icondura .speed{
+  font-size: 1.5rem;
+}
+ .boxc1 h5{
+  color: gray;
+  margin-bottom: -0.4rem;
+}
+
+ .boxc1 p{
+  font-size: 0.8rem;
+}
+
+.boxc1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.durationbox .box2{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: #283048;
+  height: 60px;
+  width: 130px;
+  padding-bottom: 1rem;
+overflow: hidden;  
+border-radius: 1rem;
+}
+
+.icondura2{
+  display: flex;
+  justify-content: center;
+align-items: center;
+  height: 40px;
+  background-color: gray;
+  width: 40px;
+  border-radius:3rem ;
+  margin-right: 10px;
+}
+.boxc2 h5{
+  color: gray;
+  margin-bottom: -0.4rem;
+}
+
+ .boxc2 p{
+  font-size: 0.8rem;
+}
+
+.boxc2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.upgradepage2{
+  display: flex;
+ justify-content: center;
+align-items: center;
+ height: 100vh;
+ flex-direction: column;
+
+}
+
+.upgradepage3{
+  display: flex;
+ justify-content: center;
+align-items: center;
+ height: 100vh;
+ flex-direction: column;
+ margin-top: -9rem;
+}
+
+.upgradepage4{
+  display: flex;
+ justify-content: center;
+align-items: center;
+ height: 100vh;
+ flex-direction: column;
+ margin-top: -9rem;
+}
+
+.btnupgrade{
+  position: relative;
+  top: 1.6em;
+color: white;
+background-color: blue;
+border: 0px;
+height: 2rem;
+width: 9rem;
+border-radius: 2rem;
+transition: 0.3s ease-in-out ;
+cursor: pointer;
+  }
+
+  .btnupgrade:hover{
+    border: 1px solid blue;
+    background-color: white;
+    color: black;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .upall{
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* Two columns */
+      grid-gap: 0px; /* Gap between grid items */
+      padding-top: 0rem;
+    }
+
+    .upgradepage{
+      margin-top:5rem;
+    }
+    .upgradepage2, .upgradepage3, .upgradepage4{
+      margin-top: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .upgradepage2, .upgradepage3, .upgradepage4{
+      margin-top: -19rem;
+    }
+
+    .box-upgrade{
+      width: 329px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .upgradepage2, .upgradepage3, .upgradepage4{
+      margin-top: 1rem;
+    }
+
+    .box-upgrade{
+      width: 307px;
+    }
+  }
+
+  @media only screen and (max-width: 500px)
+ {
+  .upgradepage2, .upgradepage3, .upgradepage4{
+    margin-top: -19rem;
+  }
+
+  .box-upgrade{
+    width: 329px;
+  }
+
+ }
+
+ @media only screen and (max-width: 330px){
+  .upgradepage2, .upgradepage3, .upgradepage4{
+    margin-top: -4rem;
+  }
+  .box-upgrade{
+    width: 307px;
+  }
+ }

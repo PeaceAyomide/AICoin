@@ -5,6 +5,8 @@ import { BiMoneyWithdraw } from "react-icons/bi";
 import { FaRegNewspaper } from "react-icons/fa";
 import { FaBitcoin } from "react-icons/fa";
 import { IoChatbubbles } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+
 
 const Home2 = () => {
   return (
@@ -13,21 +15,25 @@ const Home2 = () => {
               Your Active Plan: <div className='freeplan'>Free Plan</div>
 
           </div>
+          <Link to='/upgrade' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="upgrade">
               <div className="ballicon">
-              <GoRocket />
+              <GoRocket  className='rocket'/>
               </div><p>
               Upgrade Plans
           
               </p>  
-            </div>
-          <div className="therest">
+              </div>
+          </Link>
+           <div className="therest">
+           <Link to='/withdraw' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="withdraw">
                   <div className="ballicon1">
                       <BiMoneyWithdraw/>
                   </div>
                   Withdraw
-              </div>
+                  </div>
+                  </Link>
               <div className="news">     <div className="ballicon2">
               <FaRegNewspaper/>
               </div>

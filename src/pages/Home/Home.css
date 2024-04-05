@@ -96,14 +96,12 @@ width: 12rem;
 
 
 
-
-
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1010px) {
     .home{
         display: flex;
         flex-direction: column;
         padding-bottom: 6rem;
+        margin-top: 8rem;
     }
 
     .home img{
@@ -130,7 +128,40 @@ font-size: 0.9rem;
 
 }
 
-@media only screen and (max-width: 850px) {
+
+@media only screen and (max-width: 930px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 6rem;
+        margin-top: -1rem;
+    }
+
+    .home img{
+        height: 15rem;
+        margin-top: 4rem;
+       }
+
+       .btcbalance{
+        min-height: 300px;
+        min-width: 350px;
+     }
+     .btcbalance h2{
+        font-size: 1.5rem;
+     }
+
+     
+.btcbalance p{
+    color:#283048 ;
+}
+.live p{
+    color: white;
+font-size: 0.9rem;
+}
+
+}
+
+@media only screen and (max-width: 900px) {
     .home img{
         height: 11rem;
         margin-top: 25rem;
@@ -160,4 +191,19 @@ font-size: 0.9rem;
         min-height: 300px;
         min-width: 270px;
      }
+}
+
+@media only screen and (max-width: 500px) {
+    .home{
+      
+        margin-top: -4rem;
+    }
+
+}
+
+@media only screen and (max-width: 330px) {
+    .home{
+      
+        margin-top: 3rem;
+    }
 }
