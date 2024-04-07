@@ -1,0 +1,96 @@
+.coinsec{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.coinwall{
+    display: flex;
+    flex-direction: column;
+padding-top: 8rem;
+gap: 1rem;
+}
+
+.btcsymbol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+ 
+}
+
+.symbtc{
+font-size: 1.5rem;
+color: orange;
+}
+.symeth{
+    font-size: 1.5rem;
+color: aqua;
+}
+.symusdt{
+    font-size: 1.5rem;
+    color: lightgreen;
+}
+
+.coins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #283048;
+    color: white;
+    width: 64rem;
+    gap: 19rem;
+    border-radius: 1rem;
+}
+
+
+
+.btcoin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.num{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.num .rate{
+    color: lightgreen;
+}
+
+@media only screen and (max-width: 1010px) {
+    .coins{
+      
+        width: 40rem;
+        overflow: hidden;
+       
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .coins{
+      
+        width: 22rem;
+        overflow: hidden;
+        gap: 5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .coins{
+      
+        width: 20rem;
+        overflow: hidden;
+        gap: 3rem;
+    }
+
+}

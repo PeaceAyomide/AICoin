@@ -1,0 +1,125 @@
+.chatservice{
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.chatwall{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-top: 6rem;
+    
+}
+.chatcontent{
+    height: 25rem;
+    width: 25rem;
+    background-color: #283048;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    border-radius: 1rem;
+}
+
+.chatcontent h1{
+    color: white;
+}
+.chatcontent span{
+    color: skyblue;
+}
+
+.chatcontent  button{
+    width: 5rem;
+    color: white;
+    background-color: blue;
+    height: 2rem;
+    border: 0px solid;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.chatcontent button:hover{
+    background-color: white;
+    color: blue;
+    border: 1px blue solid;
+}
+
+.chatcontent input, textarea{
+    padding: 0.4rem;
+    border: 0px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.chatimg{
+    margin-top: 6rem;
+    padding-left: 6rem;
+}
+.chatimg img{
+    height: 14rem;
+    animation: floatImage2  4s ease-in-out infinite;
+}
+
+
+@keyframes floatImage2 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (max-width: 1010px) {
+.chatservice{
+    padding-bottom: 36rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .chatwall{
+        flex-direction: column;
+        padding-top: 20.3rem;
+    }
+    .chatservice{
+        padding-bottom: 46rem;
+    }
+    }
+
+@media only screen and (max-width: 500px) {
+
+    
+    .chatwall{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20.3rem;
+    }
+    .chatcontent{
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .chatcontent{
+    width: 22rem;
+    }
+    .chatservice{
+        padding-bottom: 46rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .chatcontent{
+        width: 20rem;
+        }
+}

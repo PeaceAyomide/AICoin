@@ -90,6 +90,7 @@ color: #283048;
     background-color: blue;
     border: 0px ;
     border-radius: 1rem;
+    cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 

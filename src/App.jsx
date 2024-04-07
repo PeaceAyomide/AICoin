@@ -11,6 +11,8 @@ import Home2 from './pages/Home/Home2/Home2';
 import UpgradePlans from './pages/UpgradePlans/UpgradePlans';
 import Withdraw from './pages/Withdraw/Withdraw';
 import News from './pages/News/News';
+import Coin from './pages/Coin/Coin';
+import Chat from './pages/Chat/Chat';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -45,6 +47,10 @@ const [isFetching, setIsFetching] = useState(true)
           <><Navbar /><Withdraw/></> } />
        <Route path='/news' element={
           <><Navbar /><News/></> } />
+       <Route path='/coin' element={
+          <><Navbar /><Coin/></> } />
+    <Route path='/chat' element={
+          <><Navbar /><Chat/></> } />
       </Routes>
       
     </BrowserRouter>

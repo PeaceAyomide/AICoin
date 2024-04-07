@@ -41,18 +41,26 @@ const Home2 = () => {
               </div>
              News
                   </div>
-                  </Link>
+              </Link>
+              <Link to='/coin' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
+        
               <div className="Coin">     <div className="ballicon3">
                   <FaBitcoin/>
               </div>
              Coin List
-              </div>
-              <div className="About">     <div className="ballicon4">
+                  </div>
+              </Link>
+              <Link to='/chat' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
+        
+              <div className="About">
+                  <div className="ballicon4">
                   <IoChatbubbles/>
               </div>
              Chat With Us</div>
+             </Link>
+      
           </div>
-      </div>
+        </div>
   )
 }
 

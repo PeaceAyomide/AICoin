@@ -19,11 +19,11 @@ const Withdraw = () => {
               <div className="enterinfo">
               <div className="enterbtc">
                   BTC
-                  <input type="text" placeholder='Enter BTC' />
+                  <input type="text" placeholder='Enter BTC'style={{ outline: 'none' }} />
               </div>
               <div className="enterwallet">
                       Wallet Address 
-                      <input type="text" placeholder='Paste Wallet Adress' />
+                      <input type="text" placeholder='Paste Wallet Adress' style={{ outline: 'none' }}/>
                       
               </div>
            
