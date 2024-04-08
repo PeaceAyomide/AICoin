@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import { GoRocket } from "react-icons/go";
 import './Home2.css'
 import { BiMoneyWithdraw } from "react-icons/bi";
@@ -9,6 +9,11 @@ import { Link } from 'react-router-dom';
 
 
 const Home2 = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
       <div className="trialcontent">
           <div className="yourplan">

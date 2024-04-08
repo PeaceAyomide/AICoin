@@ -14,6 +14,7 @@ import News from './pages/News/News';
 import Coin from './pages/Coin/Coin';
 import Chat from './pages/Chat/Chat';
 
+
 const App = () => {
   const [user, setUser] = useState(null);
 const [isFetching, setIsFetching] = useState(true)
@@ -42,15 +43,36 @@ const [isFetching, setIsFetching] = useState(true)
         <Route path='/login' element={ <LoginSign user={user}></LoginSign>} />
         <Route path='/private' element={ <ProtectedRoute user={user}><Navbar /><Home/><Home2/></ProtectedRoute>} />
         <Route path='/upgrade' element={
-          <><Navbar /><UpgradePlans/></> } />
-        <Route path='/withdraw' element={
-          <><Navbar /><Withdraw/></> } />
-       <Route path='/news' element={
-          <><Navbar /><News/></> } />
-       <Route path='/coin' element={
-          <><Navbar /><Coin/></> } />
+            <ProtectedRoute user={user}>
+              <Navbar />
+              <UpgradePlans />
+            </ProtectedRoute>
+          }
+        />
+        <Route path='/withdraw'   element={
+            <ProtectedRoute user={user}>
+              <Navbar />
+              <Withdraw />
+            </ProtectedRoute>
+          } />
+       <Route path='/news'   element={
+            <ProtectedRoute user={user}>
+              <Navbar />
+              <News />
+            </ProtectedRoute>
+          } />
+       <Route path='/coin'  element={
+            <ProtectedRoute user={user}>
+              <Navbar />
+              <Coin />
+            </ProtectedRoute>
+          } />
     <Route path='/chat' element={
-          <><Navbar /><Chat/></> } />
+            <ProtectedRoute user={user}>
+              <Navbar />
+              <Chat />
+            </ProtectedRoute>
+          } />
       </Routes>
       
     </BrowserRouter>

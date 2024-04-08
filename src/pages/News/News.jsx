@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import './News.css'
 
 const News = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return (
       
         <div className='newsection'>

@@ -177,7 +177,7 @@ font-size: 0.9rem;
       
     }
     .homewall{
-        padding-top: 1rem;
+        padding-top:49rem;
         }
     .home{ 
          padding-bottom: 30rem;
@@ -187,7 +187,7 @@ font-size: 0.9rem;
 
 @media only screen and (max-width: 806px) {
     .homewall{
-        padding-top: 30rem;
+        padding-top: 48rem;
         }
    
 }
@@ -204,6 +204,10 @@ font-size: 0.9rem;
      
        }
 
+       .homewall{
+        padding-top: 50rem;
+        }
+
        .btcbalance{
         min-height: 300px;
         min-width: 270px;
@@ -216,7 +220,7 @@ font-size: 0.9rem;
       
     }
     .homewall{
-        padding-top: 14rem;
+        padding-top: 27rem;
         }
 
 }
@@ -228,6 +232,6 @@ font-size: 0.9rem;
     }
 
     .homewall{
-        padding-top: 26rem;
+        padding-top: 45rem;
         }
 }

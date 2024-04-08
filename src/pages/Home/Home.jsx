@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from 'react'
+import React, { useState, useEffect, useLayoutEffect }  from 'react'
 import './Home.css'
 import { signOut } from 'firebase/auth'
 import { auth } from '../../firebase'
@@ -6,7 +6,10 @@ import Robot from '../Home/robot.png'
 import { GiWarPick } from "react-icons/gi";
 const Home = () => {
 
- 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   const handleSignOut = () => {
     signOut(auth).then(() => console.log('Sign Out')).catch((error) => console.log(error));

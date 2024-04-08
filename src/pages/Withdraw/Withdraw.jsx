@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useLayoutEffect }  from 'react'
 import'./Withdraw.css'
 
 
 const Withdraw = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
       <div className='withdrawsection'>
           <div className="withdrawwalls">

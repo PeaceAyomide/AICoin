@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import './Coin.css'
 import { FaBitcoin } from "react-icons/fa";
 import { FaEthereum } from "react-icons/fa";
 import { SiTether } from "react-icons/si";
 
 const Coin = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+
   return (
       <div className='coinsec'>
           <div className="coinwall">

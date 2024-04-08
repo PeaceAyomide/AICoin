@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect }  from 'react'
 import './UpgradePlans.css'
 import { GrCubes } from "react-icons/gr";
 import { IoIosSpeedometer } from "react-icons/io";
@@ -8,6 +8,12 @@ import { FaRocket } from "react-icons/fa";
 import { GiFrozenOrb } from "react-icons/gi";
 
 const UpgradePlans = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className='upall'>
     <div className='upgradepage'>

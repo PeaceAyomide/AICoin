@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useLayoutEffect }  from 'react'
 import Envelop from '../Chat/envelop.png'
 import './Chat.css'
 const Chat = () => {
+
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+
   return (
       <div className='chatservice'><div className="chatwall">
           <div className="chatimg"><img src={Envelop} alt="" /></div>
