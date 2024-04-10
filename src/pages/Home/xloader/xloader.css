@@ -1,0 +1,18 @@
+.loader7 {
+    display:inline-block;
+     width: 30px;
+     height: 4px;
+     background:#BE90D4;
+      -webkit-animation: loader7 1.5s linear infinite;
+    animation: loader7 1.5s linear infinite;
+  }
+  
+  
+  @keyframes loader7 {
+     from {transform: rotate(0deg);}
+    to {transform: rotate(720deg);}
+  }
+  @-webkit-keyframes loader7 {
+     from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(720deg);}
+  }
