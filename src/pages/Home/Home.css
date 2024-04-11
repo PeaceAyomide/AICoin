@@ -102,11 +102,9 @@ width: 12rem;
 button.Mining {
     background-color: green;
   }
- .xloader{
-    
- }
+ 
 
-
+  
 @media only screen and (max-width: 1010px) {
     .homewall{
         display: flex;

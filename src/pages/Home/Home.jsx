@@ -11,10 +11,20 @@ const Home = () => {
 
   const [price, setPrice] = useState(null);
   const [isSent, setIsSent] = useState(false);
-  const [number, setNumber] = useState(0.0);
+  const [number, setNumber] = useState(parseFloat(localStorage.getItem('miningNumber')) || 0.000);
   const [isIncrementing, setIsIncrementing] = useState(false);
   const timeoutRef = useRef(null);
 
+
+
+  useEffect(() => {
+    // Save the current value of number to localStorage whenever it changes
+    localStorage.setItem('miningNumber', number.toFixed(4));
+  }, [number]);
+
+
+
+  
   const incrementNumber = () => {
     setNumber(prevNumber => prevNumber + 0.0001);
     timeoutRef.current = setTimeout(incrementNumber, 3000); // Adjust the delay for slower incrementation

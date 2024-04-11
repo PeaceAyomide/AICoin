@@ -13,6 +13,8 @@ import Withdraw from './pages/Withdraw/Withdraw';
 import News from './pages/News/News';
 import Coin from './pages/Coin/Coin';
 import Chat from './pages/Chat/Chat';
+import Transfer from './pages/TransferPage/Transfer';
+
 
 
 const App = () => {
@@ -73,6 +75,13 @@ const [isFetching, setIsFetching] = useState(true)
               <Chat />
             </ProtectedRoute>
           } />
+            <Route path='/transfer' element={
+            <ProtectedRoute user={user}>
+              <Navbar />
+              <Transfer />
+            </ProtectedRoute>
+          } />
+
       </Routes>
       
     </BrowserRouter>

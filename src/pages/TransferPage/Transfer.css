@@ -1,0 +1,105 @@
+.transferpage{
+    height: 100vh;
+}
+
+.transferwall{
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    
+}
+
+.transferstuff{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    height: 460px;
+    width: 400px;
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.transferwallet{
+    line-height: 2.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containbtc, .containudt, .continethe{
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 1.8rem;
+    width: 21rem;
+}
+.btncopy{
+    height: 2rem;
+    width: 4rem;
+    border: 0px;
+    border-radius: 1rem;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+
+.btncopy:hover{
+background-color: white;
+color: blue;
+border: 1px solid blue;
+}
+
+.koin{
+    display: flex;
+    padding-top: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.confirm{
+    height: 2rem;
+    width: 5rem;
+    font-size: 0.7rem;
+    border: 0px;
+    border-radius: 1rem;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+
+.confirm:hover{
+    background-color: white;
+color: green;
+border: 1px solid green;
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+    .transferstuff{
+width: 21rem;
+    }
+    .containbtc, .containudt, .continethe{
+        width: 18rem;
+        font-size: 0.7rem;
+    }
+    .transferpage{
+        height: 200vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .transferpage{
+        height: 100vh;
+    }
+}

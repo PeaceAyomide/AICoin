@@ -6,6 +6,8 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { FaAward } from "react-icons/fa6";
 import { FaRocket } from "react-icons/fa";
 import { GiFrozenOrb } from "react-icons/gi";
+import { Link } from 'react-router-dom';
+
 
 const UpgradePlans = () => {
 
@@ -46,8 +48,10 @@ const UpgradePlans = () => {
             </div>
             
           </div>
-          <button className='btnupgrade'>Upgrade Plans</button>
+          <Link to='/transfer' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
        
+          <button className='btnupgrade'>Upgrade Plans</button>
+       </Link>
          </div>
        
       </div>
@@ -81,8 +85,11 @@ const UpgradePlans = () => {
             
           </div>
           </div>
+          <Link to='/transfer' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
+       
+       
           <button className='btnupgrade'>Upgrade Plans</button>
-      
+      </Link>
       </div>
       </div>
 
@@ -115,8 +122,11 @@ const UpgradePlans = () => {
             
           </div>
           </div>
+          <Link to='/transfer' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
+       
+       
           <button className='btnupgrade'>Upgrade Plans</button>
-      
+      </Link>
       </div>
       </div>
 
@@ -149,8 +159,11 @@ const UpgradePlans = () => {
             
           </div>
           </div>
+          <Link to='/transfer' className='link-stye' style={{ textDecoration: 'none', color: 'inherit' }}>
+       
+       
           <button className='btnupgrade'>Upgrade Plans</button>
-      
+      </Link>
       </div>
       
       </div>

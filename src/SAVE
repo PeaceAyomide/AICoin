@@ -1,47 +1,10 @@
-import React, { useState, useEffect }  from 'react'
-import './Home.css'
-import { signOut } from 'firebase/auth'
-import { auth } from '../../firebase'
-import axios from 'axios';
+// for clearing local storage
 
-const Home = () => {
+const clearLocalStorage = () => {
+  localStorage.removeItem('miningNumber');
+};
 
-  const [price, setPrice] = useState(null);
-
-  useEffect(() => {
-    const fetchBitcoinPrice = async () => {
-      try {
-        const response = await axios.get('https://api.coindesk.com/v1/bpi/currentprice.json');
-        setPrice(response.data.bpi.USD.rate);
-      } catch (error) {
-        console.error('Error fetching Bitcoin price:', error);
-      }
-    };
-
-    // Fetch Bitcoin price initially
-    fetchBitcoinPrice();
-
-    // Fetch Bitcoin price every 60 seconds (or adjust the interval as needed)
-    const interval = setInterval(fetchBitcoinPrice, 3000);
-
-    // Cleanup function to clear the interval when the component unmounts
-    return () => clearInterval(interval);
-  }, []);
-
-  const handleSignOut = () => {
-    signOut(auth).then(() => console.log('Sign Out')).catch((error) => console.log(error));
-  }
-
-  return (
-    <div className='home'>
-      <h2>Home</h2>
-      <button onClick={handleSignOut}>Sign Out</button>
-      <div>
-        <h2>Current Bitcoin Price</h2>
-        {price ? <p>${price}</p> : <p>Loading...</p>}
-      </div>
-    </div>
-  );
-}
-
-export default Home;
+// Call clearLocalStorage() where appropriate, for example when the component mounts:
+useEffect(() => {
+  clearLocalStorage();
+}, []);
