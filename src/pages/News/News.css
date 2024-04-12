@@ -68,6 +68,14 @@
     }
 }
 
+
+@media only screen and (max-width: 500px) {
+    .newsection{
+        height: 100vh;
+    }
+}
+
+
 @media only screen and (max-width: 370px) {
     .newsall{
       
